@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Bash script that displays ls where only the part of name after the dash is displayed
+for file in *; do
+    if [ -f "$file" ] && [ "${file:0:1}" != "." ]; then
+        filename=$(echo "$file" | cut -d '-' -f 2-)
+        echo "$filename"
+    fi
+done
