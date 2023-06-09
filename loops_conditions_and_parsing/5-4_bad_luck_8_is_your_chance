@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This script is displaying bad luck good luck and Best School
+#This script is displaying bad luck good luck and best school
 x=1
 while [ $x -le 10]
 do
