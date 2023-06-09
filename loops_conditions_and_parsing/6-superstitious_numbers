@@ -1,27 +1,23 @@
 #!/usr/bin/env bash
-#Counting from 1 to 20
+#Counting from 1 t0 20
+counter=1
 
-x=1
-while [ $x -le 20 ]
+while [[ $counter -le 20 ]]
 do
-    case $x in
+    case $counter in
         4)
-            echo "4"
-            echo "Bad luck from China"
+            echo "4 and bad luck from China"
             ;;
         9)
-            echo "9"
-            echo "Bad luck from Japan"
+            echo "9 and bad luck from Japan"
             ;;
         17)
-            echo "17"
-            echo "Bad luck from Italy"
+            echo "17 and bad luck from Italy"
             ;;
         *)
-            echo $x
+            echo $counter
             ;;
     esac
 
-    x=$((x+1))
+    counter=$((counter + 1))
 done
-
