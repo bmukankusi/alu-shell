@@ -4,7 +4,7 @@ if [[ "$#" == "1" ]]; then
  if [[ "$1" == "start" ]]; then
     ./manage_my_process &
     echo "$!" > /var/run/my_process.pid
-    echo "manage _my_process started"
+    echo "manage_my_process started"
   elif [[ "$1" == "stop" ]]; then
     if test -f "/var/run/my_process.pid"; then
       kill "$(cat /var/run/my_process.pid)"
@@ -24,5 +24,5 @@ if [[ "$#" == "1" ]]; then
    echo "Usage: manage_my_process {start|stop|restart}"
  fi
 else
- echo "Usage: manage_my_process (start|stop|restart]"
+ echo "Usage: manage_my_process {start|stop|restart}"
 fi
